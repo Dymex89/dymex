@@ -1,9 +1,11 @@
-CC = gcc
 CFLAGS = -Wall -g
-INCLUDES = -I/home/dymex/workspace/dymex/include
+LIB = -L/home/dymex/workspace/dymex/src
+INC = -I/home/dymex/workspace/dymex/include
+
+default: all
 
 all: src/prog.c
-	$(CC) $(CFLAGS) -o program src/prog.c
+	gcc $(CFLAGS) $(LIB) $(INC) -o program src/*.c
 
 clean:
 	$(RM) program
