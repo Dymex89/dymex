@@ -4,8 +4,8 @@ INC = -I/home/dymex/workspace/dymex/include
 
 default: all
 
-all: src/prog.c
-	gcc $(CFLAGS) $(LIB) $(INC) -o program src/*.c
+all: src/prog.cc
+	g++ $(CFLAGS) $(LIB) $(INC) -o program src/*.cc
 
 clean:
 	$(RM) program
