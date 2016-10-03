@@ -4,6 +4,11 @@
 class Helper
 {
 public:
+//	struct buffer {
+//		int size;
+//		char data[1];
+//	};
+
 	Helper();
 	void printscan();
 	void adding();
